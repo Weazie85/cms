@@ -1,0 +1,11 @@
+Options -Multiviews
+Options All -Indexes
+
+RewriteEngine On
+
+RewriteBase /cms/public/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.php [L]
